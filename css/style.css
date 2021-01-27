@@ -157,12 +157,14 @@ header .small_p{
 }
 .by_name p{
 	margin-top: 12px;
-	font-size: 19px;
+	
     text-align: center;
     color: #fafafa;
     text-transform: uppercase;
-    font-family: Roboto;
-    font-weight: 300;
+    /*font-family: Roboto;
+    font-size: 19px;
+    font-weight: 300;*/
+    font: 400 16px/28px Roboto,Helvetica Neue,sans-serif;
 }
 .barbers_text{
 	color: #fafafa;
@@ -175,6 +177,9 @@ header .small_p{
 	flex-direction: row;
 	display: flex;
 	justify-content: center;
+
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 .line-b img{
 	height: 36px;
@@ -219,13 +224,84 @@ svg{
 .price hr{
 	color: black;
 }
+.certificate{
+    font-family: Open Sans;
+    font-weight: 400;
+}
+.pd-t-b{
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
+.services_price{
+	max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+button:hover{
+	border: 0px solid transparent;
+	color: inherit;
+}
+.list_of_masters{
+	margin: 24px;
+}
+.list_of_masters button{
+	text-transform: uppercase;
+	vertical-align: middle;
+	font-family: Roboto,Helvetica Neue,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    border: 0px solid transparent;
+    padding: 0 16px;
+    color: inherit;
+    background: transparent;
+}
+.all_price{
+	max-height: 340px;
+	padding: 24px 36px;
+	display: flex;
+    flex-flow: column;
+    background-color: hsla(0,0%,100%,.56);
+    min-height: 120px;
+    position: relative;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+	color: #131313;
+}
+.display-n{
+	display: none;
+}
+.haircut_shaving{
+	padding: 24px 0;
+    width: 100%;
+    color: #131313;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Roboto;
+    font-weight: 400;
+    text-align: left;
+}
+.all_price small, .prices{
+	font-family: Open Sans;
+    font-weight: 400;
+}
+.br-t-dashed{
+	    border-top: 1px dashed rgba(34,34,34,.19);
+}
+.master_price{
+
+}
 .gallery{
 	background-image: url(../images/bg_barbers.jpg);
 	background-color: #000;
     background-size: cover;
     color: #000;
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     text-align: center;
     justify-content: center;
 }
@@ -250,7 +326,7 @@ svg{
 .gallery_photo{
 	margin: 0 auto;
 	padding-top: 5px;
-	padding-bottom: 40px;
+	
 	max-width: 1200px;
 	text-align: center;
 	justify-content: center;
@@ -293,6 +369,8 @@ svg{
     color: #000;
     padding-top: 20px;
     padding-bottom: 40px;
+    margin: 0 auto;
+    
     
     justify-content: center;
 }
@@ -300,6 +378,9 @@ svg{
 	padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+}
+.location{
+	
 }
 .t-a-c{
 	 text-align: center;
@@ -318,15 +399,20 @@ svg{
     padding-bottom: 20px;
     text-align: center;
 }
-.map{
-	margin: 0 auto;
+.map{	
+	padding-top: 5px;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.map_flex{
+	width: 50%;
 }
 .maps{
 	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-	
-	
 }
 .w-50{
 	width: 45%;
@@ -336,6 +422,12 @@ iframe{
 	min-width: 300px;
 	width: 100%;
 	text-align: center;
+	/*padding-left: 20px;
+	padding-right: 20px;*/	
+}
+.pd{
+	padding-left: 20px;
+	padding-right: 20px;
 }
 .f-l{
 	float: left;
@@ -348,6 +440,11 @@ iframe{
     font: 400 16px/28px Roboto,Helvetica Neue,sans-serif;
     cursor: default;
     text-align: left;
+    padding-left: 20px;
+	padding-right: 20px;
+}
+.information{
+	
 }
 .footer p{
 	float: none;
@@ -361,19 +458,50 @@ iframe{
     font-size: 16pt;
     margin: 0;
 }
+@media all and (min-width: 768px) and (max-width: 1023px){
+	.by_name-1{	
+	    width: 140px;
+		height: 240px;
+	    margin: 12px;
+	    overflow: hidden;
+    	position: relative;
+    	transition: all .2s linear;
+	}
+	.by_name_photo{
+		width: 140px;
+    	height: 140px;  
+	}
+	.by_name_photo img{
+	    width: 130px;
+    	height: 130px;
+	    margin: 4px;
+	}
+	.by_name p{
+		font-size: 16px;
+		font: 400 16px/28px Roboto,Helvetica Neue,sans-serif;
+    	letter-spacing: normal;
+	}
+}
+
 @media all and (min-width: 578px) and (max-width: 767px){
 	.gallery_flex {
     width: 50%;
+    min-height: 120px;
 	}
 	.gallery_photo img{
-		min-height: 300px;
+		/*min-height: 300px;*/
 	}
 	.line hr{	
-	max-width: 150px;
-	padding-left: 100px;
-	padding-right: 100px;	
+		max-width: 150px;
+		padding-left: 100px;
+		padding-right: 100px;	
 	}
-
+	.barbers .title,.price .title, .contacts .title, .gallery .title {
+	    font-size: 14pt;
+	}
+	.by_name{
+		padding: 24px 12px;
+	}
 	.by_name-1{	
 	    width: 100px;
 	    height: 180px;
@@ -391,9 +519,12 @@ iframe{
 	.by_name p{
 		font-size: 14px;
 	}
-
-
-
+	.map_flex{
+		width: 100%;
+	}
+	.all_price{
+		padding: 20px;
+	}
 	
 }
 @media all  and (max-width: 575px){
@@ -432,9 +563,22 @@ iframe{
 	}
 	.by_name p{
 		font-size: 14px;
+		font: 400 16px/28px Roboto,Helvetica Neue,sans-serif;
+    	letter-spacing: normal;
 	}
-
-
+	.map_flex{
+		width: 100%;
+	}
+	.haircut_shaving{
+		font-size: 14px;
+	}
+	.all_price{
+		padding: 20px;
+	}
+	.all_price small, .prices{
+		font-size: 12px;
+		min-width: 37px;
+	}
 }
 
 /*
@@ -957,4 +1101,3 @@ footer{
 }
 
 */
-
