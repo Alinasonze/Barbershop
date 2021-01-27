@@ -8,7 +8,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100,700,900|PT+Sans:400,700&subset=latin,cyrillic-ext,cyrillic,latin-ext'
 rel='stylesheet' type='text/css'>
 	<meta charset="character_set">
-
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
 <div class="barbershop">
@@ -45,7 +45,7 @@ rel='stylesheet' type='text/css'>
 	<div class="icon">
 		<ul>
 			<li>
-				<a href="#">
+				<a href="https://www.facebook.com/fattonysbarbers" target="_blank">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" height="32" width="36" id="Capa_1" x="0px" y="0px" viewBox="0 0 155.139 155.139" style="enable-background:new 0 0 155.139 155.139;" xml:space="preserve">
 						<g>
 							<path id="f_1_" style="fill:#010002;" d="M89.584,155.139V84.378h23.742l3.562-27.585H89.584V39.184   c0-7.984,2.208-13.425,13.67-13.425l14.595-0.006V1.08C115.325,0.752,106.661,0,96.577,0C75.52,0,61.104,12.853,61.104,36.452   v20.341H37.29v27.585h23.814v70.761H89.584z"/>
@@ -54,7 +54,7 @@ rel='stylesheet' type='text/css'>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="https://www.instagram.com/fattonysbarbers/" target="_blank">
 					<svg xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 512.00096 512.00096">
 						<path d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm108.578125 373.410156c0 59.867188-48.707031 108.574219-108.578125 108.574219h-234.8125c-59.871094 0-108.578125-48.707031-108.578125-108.574219v-234.816406c0-59.871094 48.707031-108.578125 108.578125-108.578125h234.816406c59.867188 0 108.574219 48.707031 108.574219 108.578125zm0 0"/>
 						<path d="m256 116.003906c-77.195312 0-139.996094 62.800782-139.996094 139.996094s62.800782 139.996094 139.996094 139.996094 139.996094-62.800782 139.996094-139.996094-62.800782-139.996094-139.996094-139.996094zm0 249.976563c-60.640625 0-109.980469-49.335938-109.980469-109.980469 0-60.640625 49.339844-109.980469 109.980469-109.980469 60.644531 0 109.980469 49.339844 109.980469 109.980469 0 60.644531-49.335938 109.980469-109.980469 109.980469zm0 0"/>
@@ -62,7 +62,7 @@ rel='stylesheet' type='text/css'>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="https://twitter.com/fattonysbarbers" target="_blank">
 					<svg xmlns="http://www.w3.org/2000/svg" id="Bold" enable-background="new 0 0 24 24" height="32" viewBox="0 0 24 24" width="30">
 						<path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/>
 					</svg>
@@ -342,6 +342,491 @@ rel='stylesheet' type='text/css'>
 	</div>
 
 
+	<div class="pd-t-b">
+		<span class="certificate">
+			від наших першокласних майстрів
+		</span>
+	</div>
+
+	<div class="services_price">
+		<div class="list_of_masters">
+			<button class="all">
+				<span>
+					усі
+				</span>
+			</button>
+			<button class="master">
+				<span>
+					майстер
+				</span>
+			</button>
+			<button class="junior_master">
+				<span>
+					молодший майстер
+				</span>
+			</button>
+			<button class="senior_master">
+				<span>
+					Старший майстер
+				</span>
+			</button>
+			<button class="svyatoslav">
+				<span>
+					Святослав
+				</span>
+			</button>
+			<button class="andrii">
+				<span>
+					Андрій
+				</span>
+			</button>
+		</div>
+		<!--Блок усі послуги і ціни-->
+		<div class="all_price" id="all_price">
+			<div class="haircut_shaving">
+				<div>
+					<span>
+						Стрижка
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 60-75 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						150-525 ₴
+					</span>
+				</div>
+			</div>
+			<div class="haircut_shaving br-t-dashed">
+				<div>
+					<span>
+						Стрижка бороди
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 60-75 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						150-500 ₴
+					</span>
+				</div>
+			</div>
+			<div class="haircut_shaving br-t-dashed">
+				<div>
+					<span>
+						Класичне гоління
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 60-75 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						250-500 ₴
+					</span>
+				</div>
+			</div>
+			<div class="haircut_shaving br-t-dashed">
+				<div>
+					<span>
+						Стрижка та стрижка бороди
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 60-75 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						250-800 ₴
+					</span>
+				</div>
+			</div>
+		</div>
+		<!--Блок послуги і ціни від майстра-->
+		<div class="all_price display-n" id="master_price">
+			<div class="haircut_shaving">
+				<div>
+					<span>
+						Стрижка
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 60 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						250 ₴
+					</span>
+				</div>
+			</div>
+			<div class="haircut_shaving br-t-dashed">
+				<div>
+					<span>
+						Стрижка бороди
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 45 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						250 ₴
+					</span>
+				</div>
+			</div>
+			<div class="haircut_shaving br-t-dashed">
+				<div>
+					<span>
+						Класичне гоління
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 45 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						250 ₴
+					</span>
+				</div>
+			</div>
+			<div class="haircut_shaving br-t-dashed">
+				<div>
+					<span>
+						Стрижка та стрижка бороди
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 90 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						400 ₴
+					</span>
+				</div>
+			</div>
+		</div>
+		<!--Блок послуги і ціни від молодшого майстра-->
+		<div class="all_price display-n" id="junior_master">
+			<div class="haircut_shaving">
+				<div>
+					<span>
+						Стрижка у молодшого барбера
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 75 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						150 ₴
+					</span>
+				</div>
+			</div>
+			<div class="haircut_shaving br-t-dashed">
+				<div>
+					<span>
+						Стрижка бороди у молодшого барбера
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 75 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						150 ₴
+					</span>
+				</div>
+			</div>
+			<div class="haircut_shaving br-t-dashed">
+				<div>
+					<span>
+						Стрижка та стрижка бороди у молодшого барбера
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 105 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						250 ₴
+					</span>
+				</div>
+			</div>
+		</div>
+		<!--Блок послуги і ціни від старшого майстра-->
+		<div class="all_price display-n" id="senior_master">
+			<div class="haircut_shaving">
+				<div>
+					<span>
+						Стрижка у старшого майстра
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 60 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						350 ₴
+					</span>
+				</div>
+			</div>
+			<div class="haircut_shaving br-t-dashed">
+				<div>
+					<span>
+						Стрижка бороди у старшого майстра
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 45 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						350 ₴
+					</span>
+				</div>
+			</div>
+			<div class="haircut_shaving br-t-dashed">
+				<div>
+					<span>
+						Класичне гоління у старшого майстра
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 45 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						350 ₴
+					</span>
+				</div>
+			</div>
+			<div class="haircut_shaving br-t-dashed">
+				<div>
+					<span>
+						Комплекс послуг у старшого майстра
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 90 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						600 ₴
+					</span>
+				</div>
+			</div>
+		</div>
+		<!--Блок послуги і ціни від Святослава-->
+		<div class="all_price display-n" id="svyatoslav">
+			<div class="haircut_shaving">
+				<div>
+					<span>
+						Стрижка від Святослава
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 60 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						500 ₴
+					</span>
+				</div>
+			</div>
+			<div class="haircut_shaving br-t-dashed">
+				<div>
+					<span>
+						Стрижка бороди чи гоління у Святослава
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 45 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						500 ₴
+					</span>
+				</div>
+			</div>
+			<div class="haircut_shaving br-t-dashed">
+				<div>
+					<span>
+						Гоління у Святослава
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 45 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						500 ₴
+					</span>
+				</div>
+			</div>
+			<div class="haircut_shaving br-t-dashed">
+				<div>
+					<span>
+						Комплексна послуга у Святослава
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 90 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						800 ₴
+					</span>
+				</div>
+			</div>
+		</div>
+		<!--Блок послуги і ціни від Андрія-->
+		<div class="all_price display-n" id="andrii">
+			<div class="haircut_shaving">
+				<div>
+					<span>
+						Стрижка від Андрія
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 60 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						450 ₴
+					</span>
+				</div>
+			</div>
+			<div class="haircut_shaving br-t-dashed">
+				<div>
+					<span>
+						Стрижка бороди чи гоління у Андрія
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 45 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						450 ₴
+					</span>
+				</div>
+			</div>
+			<div class="haircut_shaving br-t-dashed">
+				<div>
+					<span>
+						Гоління від Андрія
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 45 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						450 ₴
+					</span>
+				</div>
+			</div>
+			<div class="haircut_shaving br-t-dashed">
+				<div>
+					<span>
+						Комплексна послуга у Андрія
+					</span>
+					<br>
+					<small>
+						<span>
+							Тривалість: 90 хвилин
+						</span>
+					</small>
+				</div>
+				<div class="prices">
+					<span>
+						700 ₴
+					</span>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="pd-t-b">
+		<span class="certificate">
+			Усі послуги можна також придбати у вигляді подарункових сертифікатів
+		</span>
+	</div>
+
+
+
+
+
+
 
 	<div class="line-b">
 		<div class="line">
@@ -473,8 +958,15 @@ rel='stylesheet' type='text/css'>
 
 <!-- Блок контакти -->
 <div class="contacts">
-	<div>
-		
+	<div class="location t-a-c">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="36px" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 483.083 483.083" style="enable-background:new 0 0 483.083 483.083;" xml:space="preserve">
+			<g>
+				<g>
+					<path d="M241.542,114.467c-41.933,0-75.933,34-75.933,75.933s34,75.933,75.933,75.933s75.933-34,75.933-75.933    S283.475,114.467,241.542,114.467z M241.542,232.333c-22.95,0-41.933-18.7-41.933-41.933s18.7-41.933,41.933-41.933    s41.933,18.7,41.933,41.933S264.492,232.333,241.542,232.333z"/>
+					<path d="M367.625,56.667C344.675,30.883,303.025,0,236.442,0c-109.367,0-166.6,88.967-166.6,176.8    c0,115.033,157.25,292.683,164.05,300.333c3.117,3.683,7.65,5.95,12.467,5.95h0.283c4.817,0,9.067-2.267,12.467-5.667    c1.7-1.7,38.817-41.933,76.5-98.317c51.567-77.067,77.633-145.35,77.633-202.583C413.242,132.883,396.525,89.25,367.625,56.667z     M246.925,439.45c-36.833-44.2-142.8-178.217-142.8-262.933c0-68.567,41.65-142.517,132.6-142.517    c92.65,0,142.517,73.383,142.517,142.517C379.242,276.25,282.058,398.367,246.925,439.45z"/>
+				</g>
+			</g>
+		</svg>
 	</div>
 
 	<div class="t-a-c">
@@ -526,14 +1018,55 @@ rel='stylesheet' type='text/css'>
 	</div>
 
 	<div class="map">
-		<div class="maps f-l w-50">
-			<span>Локація №1 - Центр</span>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.189644085869!2d24.03645406253219!3d49.83889406864691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6a2b4cafbf%3A0x2790ed1ed99e7944!2z0YPQuy4g0KDQuNC80LvRj9C90LjQvdCwLCA1LCDQm9GM0LLQvtCyLCDQm9GM0LLQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1sru!2sua!4v1606851284600!5m2!1sru!2sua"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<div class="maps map_flex">
+			<div class="pd">
+				<span>Локація №1 - Центр</span>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.189644085869!2d24.03645406253219!3d49.83889406864691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6a2b4cafbf%3A0x2790ed1ed99e7944!2z0YPQuy4g0KDQuNC80LvRj9C90LjQvdCwLCA1LCDQm9GM0LLQvtCyLCDQm9GM0LLQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1sru!2sua!4v1606851284600!5m2!1sru!2sua"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				<div class="information"></div>
+			</div>
+			<div class="pd">
+				<a href="#">
+					<span>
+						Львів, вул. Римлянина 5
+					</span>
+				</a>
+				<a href="#">
+					<span>
+						+38 (063) 4884848
+					</span>
+				</a>
+				<a href="#">
+					<span>
+						hi@fattonysbarbers.com
+					</span>
+				</a>
+			</div>
+			
 		</div>
 
-		<div class="maps f-l w-50">
-			<span>Локація №2 - Проспект Чорновола</span>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1323.8445381517056!2d24.024424648385004!3d49.85533617449282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDUxJzE5LjAiTiAyNMKwMDEnMzAuNyJF!5e0!3m2!1sru!2sua!4v1606851707167!5m2!1sru!2sua"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<div class="maps map_flex">
+			<div class="pd">
+				<span>Локація №2 - Проспект Чорновола</span>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1323.8445381517056!2d24.024424648385004!3d49.85533617449282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDUxJzE5LjAiTiAyNMKwMDEnMzAuNyJF!5e0!3m2!1sru!2sua!4v1606851707167!5m2!1sru!2sua"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+			<div class="pd">
+				<a href="#">
+					<span>
+						Львів, вул. Римлянина 5
+					</span>
+				</a>
+				<a href="#">
+					<span>
+						+38 (063) 4884848
+					</span>
+				</a>
+				<a href="#">
+					<span>
+						hi@fattonysbarbers.com
+					</span>
+				</a>
+			</div>
+			
 		</div>
 	</div>
 
@@ -550,29 +1083,62 @@ rel='stylesheet' type='text/css'>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>	
+
+
+
+<script>
+	$(document).ready(function(){
+	 	$( ".all" ).click(function() {
+	 		$( "#all_price" ).show();
+	 		$( "#master_price" ).hide();
+	 		$( "#junior_master" ).hide();
+	 		$( "#senior_master" ).hide();
+	 		$( "#svyatoslav" ).hide();
+	 		$( "#andrii" ).hide();
+		});
+		$( ".master" ).click(function() {
+			$( "#all_price" ).hide();
+	 		$( "#master_price" ).show();
+	 		$( "#junior_master" ).hide();
+	 		$( "#senior_master" ).hide();
+	 		$( "#svyatoslav" ).hide();
+	 		$( "#andrii" ).hide();
+		});
+		$( ".junior_master" ).click(function() {
+			$( "#all_price" ).hide();
+	 		$( "#master_price" ).hide();
+	 		$( "#junior_master" ).show();
+	 		$( "#senior_master" ).hide();
+	 		$( "#svyatoslav" ).hide();
+	 		$( "#andrii" ).hide();
+		});
+		$( ".senior_master" ).click(function() {
+			$( "#all_price" ).hide();
+	 		$( "#master_price" ).hide();
+	 		$( "#junior_master" ).hide();
+	 		$( "#senior_master" ).show();
+	 		$( "#svyatoslav" ).hide();
+	 		$( "#andrii" ).hide();
+		});
+		$( ".svyatoslav" ).click(function() {
+			$( "#all_price" ).hide();
+	 		$( "#master_price" ).hide();
+	 		$( "#junior_master" ).hide();
+	 		$( "#senior_master" ).hide();
+	 		$( "#svyatoslav" ).show();
+	 		$( "#andrii" ).hide();
+		});
+		$( ".andrii" ).click(function() {
+			$( "#all_price" ).hide();
+	 		$( "#master_price" ).hide();
+	 		$( "#junior_master" ).hide();
+	 		$( "#senior_master" ).hide();
+	 		$( "#svyatoslav" ).hide();
+	 		$( "#andrii" ).show();
+		});
+	});
+
+</script>
 </body>
 </html>
